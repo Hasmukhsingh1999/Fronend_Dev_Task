@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Gilroy";
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+@font-face {
+  font-family: "La Roseleda";
+  src: url(../font/la-rosaleda-cufonfonts/LaRosaledaFree-4BZlp.otf);
+}
+
+.font {
+  font-family: "La Roseleda";
+  font-weight: 500;
+  font-size: 2.5vw;
+}
+.iconClose {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
+@media (max-width: 768px) {
+  .font {
+    font-size: 7vw;
+    font-weight: 500;
+  }
+  .fl {
+    display: flex;
+    flex-direction: column;
+  }
+  .lk {
+    display: none;
+  }
+  .ml {
+    text-align: center;
+  }
+}
+
+.nav-ul {
+  font-family: "La Roseleda";
+}
+
+.fl {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.btn {
+  padding: 15px 32px;
+  background-color: white;
+  outline: none;
+  border: none;
+  font-size: 1vw;
+}
+
+.btn-1 {
+  text-align: center;
+}
+.accountInfo {
+  margin-top: 50px;
+}
+.accountInfo .container {
+  padding: 50px;
+  max-width: 60%;
+  margin: auto;
+}
+.accountInfo .content {
+  margin-top: 80px;
+  display: flex;
+  justify-content: flex-start;
+}
+.accountInfo .left {
+  width: 150px;
+  position: relative;
+}
+.accountInfo .right {
+  width: calc(100% - 180px);
+  margin-left: 50px;
+}
+
+.accountInfo .left .img input {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+}
+.accountInfo .img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.accountInfo .right label {
+  font-size: 17px;
+  color: #000;
+  margin-bottom: 10px;
+  display: block;
+}
